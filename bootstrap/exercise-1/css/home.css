@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+main {
+    display: flex;
+}
+
+#form-container {
+    background-color: lightgray;
+    display: grid;
+    padding: 10px 20px;
+}
+
+#btn-new-customer {
+    justify-self: end;
+}
+
+#table-container {
+    background-color: lime;
+}
+
+@media all and (max-width: 991px) {
+    main {
+        flex-direction: column;
+    }
+}

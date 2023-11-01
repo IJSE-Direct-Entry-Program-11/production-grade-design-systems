@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+#logo-container h1 i{
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+}
+
+#form-container {
+    padding: 10px 20px;
+    display: grid;
+    flex-basis: 40%;        
+}
+
+#form-container > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-container > div:last-child{
+    margin-top: 1rem;
+}
+
+#form-container > div:first-child h3 {
+    margin: 0;
+}
+
+#form-container > div.ui.input {
+    display: grid;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+#table-container {
+    /* background-color: lime; */
+    padding: 10px 20px;
+    display: grid;
+    flex-basis: 60%;        
+}
+
+#table-container table th:first-child,
+#table-container table td:first-child,
+#table-container table th:last-child,
+#table-container table td:last-child {
+    text-align: center;
+}
+
+#table-container table i {
+    padding: 5px;
+}
+
+#table-container table i[title="Edit"]:hover {
+    color: green;
+    cursor: pointer;
+}
+
+#table-container table i[title="Delete"]:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (max-width: 991px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 460px) {
+    header {
+        flex-direction: column;
+    }
+
+    #btn-new-customer span {
+        display: none;
+    }
+
+    #form-container > div:last-child{
+        text-align: center;
+    }
+}

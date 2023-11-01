@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic UI - Exercise 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <h1><i class="icon opencart"></i>SMART POS</h1>
+        </div>
+        <div id="bread-crumb-container">
+            <div class="ui breadcrumb">
+                <a class="section">Home</a>
+                <i class="right angle icon divider"></i>
+                <div class="active section">Manage Customers</div>
+              </div>
+        </div>
+    </header>
+    <main>
+        <form action="#" method="POST" id="form-container">
+            <div>
+                <h3>Customer Details</h3>
+                <button id="btn-new-customer" class="ui button">+ NEW <span>CUSTOMER</span></button>
+            </div>
+            <div class="ui input">
+                <label for="txt-id">Customer ID:</label>
+                <input id="txt-id" type="text" placeholder="Eg. C001">
+            </div>
+            <div class="ui input">
+                <label for="txt-name">Customer Name:</label>
+                <input id="txt-name" type="text" placeholder="Eg. Kasun Sampath">
+            </div>
+            <div class="ui input">
+                <label for="txt-address">Customer Address:</label>
+                <input id="txt-address" type="text" placeholder="Eg. 50/B, Grace Peris Road, Panadura">
+            </div> 
+            <div>
+                <button type="submit" class="ui primary button">
+                    SAVE
+                </button>
+                <button type="reset" class="ui button">
+                    CLEAR
+                </button>
+            </div>                       
+        </form>
+        <div id="table-container">
+            <div class="ui fluid icon input">
+                <input type="text" placeholder="Enter your query to search customer">
+                <i class="search icon"></i>
+              </div>
+              <table class="ui selectable celled table unstackable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>ADDRESS</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Kasun Sampath</td>
+                        <td>Grace Peries Road, Panadura</td>
+                        <td>
+                            <i title="Edit" class="pencil alternate icon"></i>
+                            <i title="Delete" class="trash icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Nuwan Ramindu</td>
+                        <td>Nirmala Mawatha, Panadura</td>
+                        <td>
+                            <i title="Edit" class="pencil alternate icon"></i>
+                            <i title="Delete" class="trash icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Suranga Lakmal</td>
+                        <td>Kyle's Road, Moratuwa</td>
+                        <td>
+                            <i title="Edit" class="pencil alternate icon"></i>
+                            <i title="Delete" class="trash icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Amila Shantha</td>
+                        <td>ABC Scheme, Monaragala</td>
+                        <td>
+                            <i title="Edit" class="pencil alternate icon"></i>
+                            <i title="Delete" class="trash icon"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <div id="pagination-container">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                      1
+                    </a>
+                    <a class="item">
+                      2
+                    </a>
+                    <a class="item">
+                      3
+                    </a>
+                    <a class="item">
+                      4
+                    </a>
+                  </div>
+            </div>             
+        </div>
+        
+    </main>
+</body>
+</html>

@@ -10,21 +10,40 @@ main {
 }
 
 #form-container {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: grid;
     padding: 10px 20px;
-}
-
-#btn-new-customer {
-    justify-self: end;
+    flex-basis: 40%;
 }
 
 #table-container {
-    background-color: lime;
+    display: grid;
+    padding: 10px 20px;
+    flex-basis: 60%;
 }
 
 @media all and (max-width: 991px) {
     main {
         flex-direction: column;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    #form-container {
+        flex-basis: 45%;
+    }
+    #table-container {
+        flex-basis: 55%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #btn-new-customer span {
+        display: none;
     }
 }
